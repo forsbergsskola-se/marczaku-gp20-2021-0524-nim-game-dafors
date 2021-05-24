@@ -143,6 +143,10 @@
     <ClCompile Include="nim.cpp" />
     <ClCompile Include="tictactoe.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="input_handler.h" />
+    <ClInclude Include="nim.h" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

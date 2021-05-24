@@ -1,34 +1,38 @@
 #include <iostream>
+#include "input_handler.h"
+#include "nim.h"
+
 bool HandleInput(int input);
+const std::string options{   
+    "1 - Play nim\n"
+    "2 - Play tictactoe\n"
+    "3 - Quit \n\n"
+};
 
 int main()
 {
     bool quit = false;
     while (!quit) {
-        int input = -1;
-        std::cout << "1 - Play nim\n";
-        std::cout << "2 - Play tictactoe\n";
-        std::cout << "3 - Quit \n";
-        std::cin >> input;
+        std::cout << options;
+        int input{ InputHandler::GetInt() };
         quit = HandleInput(input);
     }
 }
 
 bool HandleInput(int input) {
+
     bool quit = false;
-    switch (input)
-    {
-    case 1:
-        std::cout << "Starting nim";
-        break;
-    case 2:
+    if (input == 1) {
+        std::cout << "Starting nim...\n";
+        Nim nim{};
+        nim.Play();
+    }
+    else if (input == 2) {
         std::cout << "Starting tictactoe";
-        break;
-    case 3:
+    }
+    else if (input == 3) {
+        std::cout << "Closing application";
         quit = true;
-        break;
-    default:
-        break;
     }
     return quit;
 }
