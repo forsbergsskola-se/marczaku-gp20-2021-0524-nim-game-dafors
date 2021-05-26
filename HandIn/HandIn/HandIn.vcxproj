@@ -146,6 +146,7 @@
     <ClCompile Include="tictactoe.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="binary.h" />
     <ClInclude Include="tictactoe.h" />
     <ClInclude Include="input_handler.h" />
     <ClInclude Include="nim.h" />

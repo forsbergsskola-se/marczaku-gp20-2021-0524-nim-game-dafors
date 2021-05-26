@@ -35,5 +35,8 @@
     <ClInclude Include="tictactoe.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="binary.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
