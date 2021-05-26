@@ -1,5 +1,4 @@
-// for anyone peeking =) 
-// https://www.learncpp.com/cpp-tutorial/stdcin-and-handling-invalid-input/
+// for anyone peeking =) https://www.learncpp.com/cpp-tutorial/stdcin-and-handling-invalid-input/
 
 #pragma once
 #include <iostream>;
@@ -8,12 +7,11 @@ class InputHandler {
 public:
     static int GetInt()
     {
-        while (true) // Loop until user enters a valid input
+        while (true)
         {
             int x{};
             std::cin >> x;
 
-            // Check for failed extraction
             if (std::cin.fail()) // has a previous extraction failed?
             {
                 std::cin.clear(); // put us back in 'normal' operation mode
