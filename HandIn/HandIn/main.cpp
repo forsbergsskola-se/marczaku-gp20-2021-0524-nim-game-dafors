@@ -37,7 +37,7 @@ bool HandleInput(int input) {
     }
     else if (input == 3) {
         std::cout << "Time for some crazy binary fun HAHAHAHAHAH \n";
-        binary::DecimalToBinary();
+        binary::InputToBinary();
     }
     else if (input == 4) {
         std::cout << "Closing application... \n";
