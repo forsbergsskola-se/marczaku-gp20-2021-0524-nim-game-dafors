@@ -4,8 +4,7 @@
 
 void Nim::Play()
 {
-	std::cout << this->rules;
-	int input = -1;
+	std::cout << rules;
 	while (remaining_sticks > 0) {
 		DrawSticks();
 		std::cout << "Player " << current_player << ", draw your sticks... \n";

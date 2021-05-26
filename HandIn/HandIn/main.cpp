@@ -1,6 +1,7 @@
 #include <iostream>
 #include "input_handler.h"
 #include "nim.h"
+#include "tictactoe.h"
 
 bool HandleInput(int input);
 const std::string options{   
@@ -28,10 +29,12 @@ bool HandleInput(int input) {
         nim.Play();
     }
     else if (input == 2) {
-        std::cout << "Starting tictactoe";
+        std::cout << "Starting tictactoe... \n";
+        TicTacToe tictactoe{};
+        tictactoe.Play();
     }
     else if (input == 3) {
-        std::cout << "Closing application";
+        std::cout << "Closing application... \n";
         quit = true;
     }
     return quit;
